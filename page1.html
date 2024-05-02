@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece</title>
+    <link rel="stylesheet" href="list.css" />
+  </head>
+  <body>
+    <div id="navbarContainer"></div>
+    <div class="boxlist">
+      <header><h1>One Piece Episode List</h1></header>
+      <div class="list">
+        <div class="numbers">
+          <a href="/op1.html">1</a>
+        </div>
+        <div class="numbers">
+          <a href="/op2.html">2</a>
+        </div>
+        <div class="numbers">
+          <a href="/op3.html">3</a>
+        </div>
+        <div class="numbers">
+          <a href="/op4.html">4</a>
+        </div>
+        <div class="numbers">
+          <a href="/op5.html">5</a>
+        </div>
+        <div class="numbers">
+          <a href="/op6.html">6</a>
+        </div>
+        <div class="numbers">
+            <a href="/op7.html">7</a>
+          </div>
+          <div class="numbers">
+            <a href="/op8.html">8</a>
+          </div>
+          <div class="numbers">
+            <a href="/op9.html">9</a>
+          </div>
+          <div class="numbers">
+            <a href="/op10.html">10</a>
+          </div><div class="numbers">
+            <a href="/op11.html">11</a>
+          </div><div class="numbers">
+            <a href="/op12.html">12</a>
+          </div><div class="numbers">
+            <a href="/op13.html">13</a>
+          </div>
+          <div class="numbers">
+            <a href="/op14.html">14</a>
+          </div><div class="numbers">
+            <a href="/op15.html">15</a>
+          </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        fetch("nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbarContainer").innerHTML = data;
+          });
+      });
+    </script>
+  </body>
+</html>

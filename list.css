@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.boxlist{
+    box-sizing: border-box;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    height: 40vh;
+    width: 90vw;
+    border: solid gray;
+    /* overflow-y: scroll; */
+
+}
+.boxlist header{
+    color: grey;
+    text-align: center;
+    
+}
+.list{
+    width: 80%;
+    margin: 0 auto;
+    overflow-y: auto;
+    height: 300px; /* Adjust height as needed */
+    /* border: 1px solid #e90808; */
+    padding: 10px;
+}
+.numbers{
+    box-sizing: border-box;
+    align-items: center;
+    
+    border: solid #dddddd 2px;
+    margin: 1px;
+    width: 5vw;
+    height: 5vh;
+    min-width: 5vw;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    
+    
+    
+    
+}
+.numbers :nth-child(5n){
+    margin-right: 0;
+}
+.numbers :nth-child(5n+1){
+    clear: both;
+}
+a{
+    color: aqua;
+    
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: whitesmoke;
+}
+.header{
+    font-weight: 600;
+    font-size: larger;
+}

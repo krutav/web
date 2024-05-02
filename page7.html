@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOT</title>
+    <link rel="stylesheet" href="list.css">
+    
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    <div class="boxlist">
+        <header>
+          <h1>
+            
+            Attack on Titans Episode List</header>
+          </h1>
+        <div class="list">
+          <div class="numbers">
+            <a href="/op1.html">1</a>
+          </div>
+          <div class="numbers">
+            <a href="/op2.html">2</a>
+          </div>
+          <div class="numbers">
+            <a href="/op3.html">3</a>
+          </div>
+          
+        </div>
+      </div>
+    <script src="script.js"></script>
+
+<script>
+    
+    window.addEventListener('DOMContentLoaded', function () {
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbarContainer').innerHTML = data;
+            });
+    });
+</script>
+</body>
+</html>

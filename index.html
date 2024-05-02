@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krutav Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="navbarContainer"></div>
+    <div class="main">
+      <div class="image-rotator">
+        <img
+          src="I1.jpeg"
+          alt="Image 1"
+          onclick="redirectToPage('page1.html')"
+        />
+        <img
+          src="naruto.jpe"
+          alt="Image 2"
+          onclick="redirectToPage('page2.html')"
+        />
+        <img
+          src="Black_clover.jpeg"
+          alt="Image 3"
+          onclick="redirectToPage('page3.html')"
+        />
+        <img
+          src="I4.jpeg"
+          alt="Image 4"
+          onclick="redirectToPage('page4.html')"
+        />
+        <img
+          src="I5.jpeg"
+          alt="Image 5"
+          onclick="redirectToPage('page5.html')"
+        />
+        <img
+          src="I6.jpeg"
+          alt="Image 6"
+          onclick="redirectToPage('page6.html')"
+        />
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+      <div class="contain">
+        <div class="anime">
+          <div class="A1 box">
+            <div id="1" class="pic">
+              <img src="I1.jpeg" title="One Piece" alt="" srcset="" />
+            </div>
+            <a href="page1.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Watch One Piece"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="A2 box">
+            <div id="2" class="pic">
+              <img src="naruto1.jpeg" title="Naruto" srcset="" />
+            </div>
+            <a href="page2.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Watch Naruto"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="A3 box">
+            <div id="3" class="pic">
+              <img src="Black_clover.jpeg" title="Black Clover" srcset="" />
+            </div>
+            <a href="page3.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Watch Black Clover"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="A4 box">
+            <div id="4" class="pic"><img src="I4.jpeg" srcset="" title="JJK S1" /></div>
+            <a href="page4.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Watch JJK S1"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="A5 box">
+            <div id="5" class="pic"><img src="I5.jpeg" title="JJK S2" srcset="" /></div>
+            <a href="page5.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Watch JJK S2"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="A6 box">
+            <div id="6" class="pic"><img src="I6.jpeg" title="Deathnote" srcset="" /></div>
+            <a href="page6.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Deathnote"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="A7 box">
+            <div id="7" class="pic"><img src="AOT.jpeg" title="AOT" alt="" srcset="" /></div>
+            <a href="page7.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Watch AOT"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="A8 box">
+            <div id="8" class="pic"><img src="Bluelock.jpeg" title="Blue Lock" alt="" srcset="" /></div>
+            <a href="page8.html">
+              <img
+                class="play-button"
+                itemprop="contentUrl"
+                src="https://www.svgrepo.com/show/140516/play-button.svg"
+                alt="Play Button SVG File"
+                title="Watch Blue Lock"
+                width="100"
+                height="150"
+              />
+            </a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Dynamically load navbar
+      window.addEventListener("DOMContentLoaded", function () {
+        fetch("nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbarContainer").innerHTML = data;
+          });
+      });
+    </script>
+  </body>
+</html>
